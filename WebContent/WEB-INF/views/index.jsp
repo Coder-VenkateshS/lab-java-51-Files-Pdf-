@@ -4,16 +4,16 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link rel="stylesheet" type="text/css"href="./assets/style.css">
+<link rel="stylesheet" type="text/css" href="./assets/style.css">
 <title>Profile</title>
 </head>
 <body>
 
     <div class="form-style-10">
-    <h1>Export to Pdf Demo <a href="${pageContext.request.contextPath}/report">Click Here</a></h1>
+   
 
         <h1>Create your Profile!<span>Fill your details and download your Profile!</span></h1>
-        <form>
+        <form action="${pageContext.request.contextPath}/report" method="post">
             <div class="section"><span>1</span>First Name & Address</div>
             <div class="inner-wrap">
                 <label>Your Full Name <input type="text" name="field1" /></label>
@@ -45,7 +45,7 @@
                 <input type="radio" name="field15" value="Other"/>Other
             </div>
             <div class="button-section">
-             <input type="submit" name="Sign Up" />
+             <button type="submit" name="Generate PDF">Generate PDF</button>
              <span class="privacy-policy">
              <input type="checkbox" name="field7">You agree to our Terms and Policy. 
              </span>
